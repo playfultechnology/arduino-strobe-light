@@ -3,7 +3,6 @@ const byte potPin = A0;
 const byte strobePin = 3;
 
 void setup() {
-  // put your setup code here, to run once:
   pinMode(strobePin, OUTPUT);
 }
 
@@ -19,5 +18,5 @@ void loop() {
   delayMicroseconds(refreshRate);
   // Turn it off again
   digitalWrite(strobePin, LOW);
-  delay(refreshRate);
+  delayMicroseconds(refreshRate);
 }
